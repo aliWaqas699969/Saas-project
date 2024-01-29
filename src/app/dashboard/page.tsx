@@ -1,5 +1,6 @@
 import HistoryCard from "@/components/dashboard/HistoryCard";
 import QuizmeCard from "@/components/dashboard/QuizmeCard";
+import HotTopicCard from "./HotTopicCard";
 import React from "react";
 
 const page = () => {
@@ -13,7 +14,9 @@ const page = () => {
         <QuizmeCard />
         <HistoryCard />
       </div>
-      <div className="grid gap-4 mt-4 md:grid-cols-2 lg:grid-cols-4"></div>
+      <div className="grid gap-4 mt-4 md:grid-cols-2 lg:grid-cols-4">
+        <HotTopicCard />
+      </div>
     </main>
   );
 };
